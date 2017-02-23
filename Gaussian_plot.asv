@@ -1,0 +1,12 @@
+x_intial = -20;
+x_length = length(x_intial:1:abs(x_intial));
+x = zeros();
+a = zeros(length(x_intial:1:abs(x_intial)));
+
+for i = 1:
+x(i)= i;
+a(i) = Gaussian_distribution(x,0,1);
+
+end
+
+plot(x,a)
