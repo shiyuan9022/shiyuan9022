@@ -35,3 +35,4 @@ plot(x,a,'b',x,b,'c',x,c,'r')
 grid on
 
 toc
+
