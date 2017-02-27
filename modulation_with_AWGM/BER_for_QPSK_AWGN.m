@@ -5,7 +5,7 @@ tic
 Eb_No_start = -3;
 Eb_No_delta = 0.5;
 Eb_No_stop = 18;
-BER_stop = 1e-6;
+BER_stop = 1e-5;
 
 % Setup the SNR for the first iteration of the loop.
 Eb_No_count = 1;
@@ -78,7 +78,7 @@ while Eb_No <= Eb_No_stop && BER >= BER_stop
     results(Eb_No_count,2) = BER %#ok<NOPTS>
     
     % Plot the results. This will be ignored on Lyceum.
-    hold off;
+    hold on;
     semilogy(results(:,1),results(:,2),'b.-');
     title('QPSK modulation in an AWGN channel');
     ylabel('BER');
@@ -89,7 +89,7 @@ while Eb_No <= Eb_No_stop && BER >= BER_stop
     if Eb_No_stop ~= inf
         xlim([Eb_No_start, Eb_No_stop]);
     end
-    grid
+    grid on
     % Setup the SNR for the next iteration of the loop.
     Eb_No = Eb_No + Eb_No_delta;
     Eb_No_count = Eb_No_count + 1;

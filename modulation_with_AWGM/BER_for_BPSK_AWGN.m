@@ -76,7 +76,7 @@ while Eb_No <= Eb_No_stop && BER >= BER_stop
     if Eb_No_stop ~= inf
         xlim([Eb_No_start, Eb_No_stop]);
     end
-    grid
+    grid on
     % Setup the SNR for the next iteration of the loop.
     Eb_No = Eb_No + Eb_No_delta;
     Eb_No_count = Eb_No_count + 1;
