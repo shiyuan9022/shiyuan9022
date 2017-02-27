@@ -67,7 +67,7 @@ while Eb_No <= Eb_No_stop && BER >= BER_stop
     
     % Plot the results. This will be ignored on Lyceum.
     semilogy(results(:,1),results(:,2),'b.-');
-    title('64QAM modulation in an AWGN channel');
+    title('BPSK modulation in an AWGN channel');
     ylabel('BER');
     xlabel('Eb/N0 (in dB)');
     if  BER_stop ~= 0
