@@ -1,3 +1,5 @@
+
+clc
 clc;
 clear all;
  
