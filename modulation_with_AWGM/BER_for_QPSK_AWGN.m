@@ -1,6 +1,6 @@
 clc;
 clear all;
-
+ 
 tic
 Eb_No_start = -3;
 Eb_No_delta = 0.5;
